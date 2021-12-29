@@ -1,0 +1,102 @@
+.dropdown {
+    margin: 0 auto;
+}
+nav {
+    height : 60px;
+    background: #2c3e50;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+.logo {
+    padding: 2px 0 0 10px;
+    width: 110px;
+    height: auto;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+nav ul li {
+    background: #2c3e50;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    background: #243442;
+}
+nav ul ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul ul li {
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 150px;
+
+}
+* {
+    box-sizing: border-box;
+}
+:root {
+    --color--1: #16cff0;
+    --color--2: #1d95e6;
+    --color--3: #f1db11;
+    --color--4: #e87911;
+    --color--5: #ff002f;
+}
+.wrapper {
+    background-color: black;
+    min-height: 100%;
+    line-height: 1;
+    min-height: calc(100vh -16 px);
+    display: grid;
+    place-items: center;
+    color: #fff;
+}
+h1 {
+    font-family: "poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    width: -webkit-min-content ;
+    width: -moz-min-content;
+    width: min-content;
+    margin: auto;
+    text-transform: uppercase;
+    background: linear-gradient(219deg,
+                    var(--color--1) 19%,
+                    transparent 19%, transparent 20%,
+                    var(--color--2) 20%, var(--color--2) 39%,
+                    transparent 39%, transparent 40%,
+                    var(--color--3) 40%, var(--color--3) 59%,
+                    transparent 59%, transparent 60%,
+                    var(--color--4) 60%, var(--color--4)79%,
+                    transparent 79%, transparent 80%,
+                    var(--color--5) 80% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.container{
+    padding: 1.5rem;
+    text-align: center;
+}
